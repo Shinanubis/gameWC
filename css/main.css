@@ -1,13 +1,10 @@
-body {height:100%;width:100%;position:absolute;}
-
-
 .bloc {
 	padding: 15px;
 	width: 220px;
 	height: 150px;
 	background: #f0e8d8;
 	text-align: center;
-  position: relative;
+  position: absolute;
   top: 50%; margin-top: -100px;
   left: 50%; margin-left: -150px;
 	background-image: linear-gradient(to bottom, #dacdb1 11%, #f0e8d8 56%);
@@ -15,14 +12,6 @@ body {height:100%;width:100%;position:absolute;}
 }
 
 #play { }
-#effect {
-    width: 240px;
-    height: 170px;
-    padding: 0.4em;
-    position: relative;
-    border: "inset";
-}
-#effect h3 { margin: 0; padding: 0.4em; text-align: center; }
 #step1 { display: none;}
 #step3 { display: none;}
 #step5 { display: none;}

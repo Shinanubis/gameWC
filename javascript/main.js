@@ -17,13 +17,13 @@ $( function() {
   var show = 1;
   var te= false;
 
-
-
-  //step 1
+    $("body").children().removeClass('magictime vanishIn');
+  //step 0
     $( "#play" ).on( "click", function() {
-      $("#step0").css("display","none");
+      $("#step0").addClass('magictime vanishOut');
       step = 1;
-      $("#step" + step).css("display","block");
+      $("#step" + step).show();
+      $("#step" + step).addClass('magictime vanishIn');
     });
 
   //step 2.1
@@ -36,14 +36,13 @@ $( function() {
       });
       $("#step" + step).css("display","none");
       step = 0;
-      $("#step" + step).css("display","block");
+      $("#step" + step).removeClass('magictime vanishOut');
     });
 
   //step 2.2
     $( "#step22" ).on( "click", function() {
       $("#step" + step).css("display","none");
       step = 3;
-
       swal({
         text: "Vous vous dirigez vers les toilettes",
         timer: 1800,
@@ -55,9 +54,10 @@ $( function() {
 
   //step 4.1
     $( "#step41" ).on( "click", function() {
-      $("#step3").css("display","none");
+      $("#step3").addClass('magictime vanishOut');
       step = 5;
-      $("#step" + step).css("display","block");
+      $("#step" + step).show();
+      $("#step" + step).addClass('magictime vanishIn');
     });
 
   //step 6.1
@@ -77,28 +77,30 @@ $( function() {
     $( "#step62" ).on( "click", function() {
       $("#step" + step).css("display","none");
       step = 3;
-
       swal({
         text: "Vous attendez quelques minutes",
         timer: 4000,
         buttons: false,
         icon:"../assets/icon/waitingMan.gif"
       });
+      $("#step" + step).removeClass('magictime vanishOut');
       $("#step" + step).css("display","block");
     });
 
   //step 4.2
     $( "#step42" ).on( "click", function() {
-      $("#step3").css("display","none");
+      $("#step3").addClass('magictime vanishOut');
       step = 90;
-      $("#step" + step).css("display","block");
+      $("#step" + step).show();
+      $("#step" + step).addClass('magictime vanishIn');
     });
 
   //step 911
     $( "#step911" ).on( "click", function() {
-      $("#step90").css("display","none");
+      $("#step90").addClass('magictime vanishOut');
       step = 92;
-      $("#step" + step).css("display","block");
+      $("#step" + step).show();
+      $("#step" + step).addClass('magictime vanishIn');
     });
 
   //step 931
@@ -132,14 +134,15 @@ $( function() {
 
   //step 912
     $( "#step912" ).on( "click", function() {
-      $("#step90").css("display","none");
+      $("#step90").addClass('magictime vanishOut');
       step = 94;
-      $("#step" + step).css("display","block");
+      $("#step" + step).show();
+      $("#step" + step).addClass('magictime vanishIn');
     });
 
   //step 952
     $( "#step952" ).on( "click", function() {
-      $("#step94").css("display","none");
+      $("#step94").addClass('magictime vanishOut');
       swal({
        text: "Vous retournez jouer",
        timer: 1500,
@@ -166,23 +169,26 @@ $( function() {
 
   //step 81
     $( "#step81" ).on( "click", function() {
-      $("#step7").css("display","none");
+      $("#step7").addClass('magictime vanishOut');
       step = 10;
-      $("#step" + step).css("display","block");
+      $("#step" + step).show();
+      $("#step" + step).addClass('magictime vanishIn');
     });
 
   //step 82
     $( "#step82" ).on( "click", function() {
-      $("#step7").css("display","none");
+      $("#step7").addClass('magictime vanishOut');
       step = 9;
-      $("#step" + step).css("display","block");
+      $("#step" + step).show();
+      $("#step" + step).addClass('magictime vanishIn');
     });
 
   //step91
     $( "#step91" ).on( "click", function() {
-      $("#step9").css("display","none");
+      $("#step9").addClass('magictime vanishOut');
       step = 10;
-      $("#step" + step).css("display","block");
+      $("#step" + step).show();
+      $("#step" + step).addClass('magictime vanishIn');
     });
 
   //step 92
@@ -203,7 +209,6 @@ $( function() {
 
   //step 112
     $( "#step112" ).on( "click", function() {
-      $("#step10").css("display","none");
       swal({
        text: "Vous retournez jouer",
        timer: 1500,
@@ -269,7 +274,6 @@ $( function() {
   //step 172
     $( "#step172" ).on( "click", function() {
       $("#step16").css("display","none");
-
       swal({
         text: "Vous sortez des toilettes",
         timer: 1600,
@@ -295,9 +299,9 @@ $( function() {
        timer: 1500,
        buttons: false,
        icon:"../assets/icon/keyboardFlat.jpg"
-   });
+      });
       step = 0;
-      $("#step" + step).css("display","block");
+      $("#step" + step).removeClass('magictime vanishOut');
     });
 
 } );
