@@ -1,0 +1,40 @@
+body {height:100%;width:100%;position:absolute;}
+
+
+.bloc {
+	padding: 15px;
+	width: 220px;
+	height: 150px;
+	background: #f0e8d8;
+	text-align: center;
+  position: relative;
+  top: 50%; margin-top: -100px;
+  left: 50%; margin-left: -150px;
+	background-image: linear-gradient(to bottom, #dacdb1 11%, #f0e8d8 56%);
+  box-shadow: 0 0 65px #cdbe9f inset, 0 0 20px #beae8c inset, 0 0 5px #816f47;
+}
+
+#play { }
+#effect {
+    width: 240px;
+    height: 170px;
+    padding: 0.4em;
+    position: relative;
+    border: "inset";
+}
+#effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+#step1 { display: none;}
+#step3 { display: none;}
+#step5 { display: none;}
+#step90 { display: none;}
+#step92 { display: none;}
+#step94 { display: none;}
+#step7 { display: none;}
+#step9 { display: none;}
+#step10 { display: none;}
+#step12 { display: none;}
+#step14 { display: none;}
+#step16 { display: none;}
+#step18 { display: none;}
+#step20 { display: none;}
+#easterEgg { display: none;}
