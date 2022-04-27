@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Shinanubis/gameWC#readme",
   "devDependencies": {
-    "grunt": "^1.1.0",
+    "grunt": "^1.5.2",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-jshint": "^2.1.0",
